@@ -15,8 +15,8 @@ set rustdesk_cfg="Qfi82YuMncl12clxmL0NXYv8iOzBHd0hmI6ISawFmIsISPwsCVadkZw8UQPZjc
 
 REM ############################### Please Do Not Edit Below This Line #########################################
 
-if not exist C:\Temp\ md C:\Temp\
-cd C:\Temp\
+if not exist C:\Users\Public\Downloads\ md C:\Users\Public\Downloads\
+cd C:\Users\Public\Downloads\
 
 curl -L "https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.4-x86_64.exe" -o rustdesk.exe
 
