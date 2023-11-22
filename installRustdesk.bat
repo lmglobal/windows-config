@@ -21,16 +21,17 @@ cd C:\Users\Public\Downloads\
 curl -L "https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.4-x86_64.exe" -o rustdesk.exe
 
 rustdesk.exe --silent-install
-timeout /t 20
+timeout /t 10
 
 cd "C:\Program Files\RustDesk\"
 rustdesk.exe --install-service
-timeout /t 20
+timeout /t 10
 
 for /f "delims=" %%i in ('rustdesk.exe --get-id ^| more') do set rustdesk_id=%%i
 
 rustdesk.exe --config %rustdesk_cfg%
 rustdesk.exe --password Lsm@2023@
+timeout /t 10
 rustdesk.exe --assign --token rapi_XuJwBPLdQmKm+Va314VTCA== --user_name cong.le@lesmers.co
 
 echo ...............................................
