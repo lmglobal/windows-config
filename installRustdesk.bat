@@ -32,7 +32,7 @@ for /f "delims=" %%i in ('rustdesk.exe --get-id ^| more') do set rustdesk_id=%%i
 rustdesk.exe --config %rustdesk_cfg%
 rustdesk.exe --password Toan@2023@
 timeout /t 10
-rustdesk.exe --assign --token rapi_XuJwBPLdQmKm+Va314VTCA== --user_name cong.le@lesmers.co
+rustdesk.exe --assign --token rapi_XuJwBPLdQmKm+Va314VTCA== --user_name trinhhuytoan86@gmail.com
 
 echo ...............................................
 REM Show the value of the ID Variable
