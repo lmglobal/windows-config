@@ -25,7 +25,7 @@ timeout /t 20
 for /f "delims=" %%i in ('rustdesk.exe --get-id ^| more') do set rustdesk_id=%%i
 
 rustdesk.exe --config %rustdesk_cfg%
-rustdesk.exe --password Lsm@2023@
+rustdesk.exe --password Lsm@2024@
 timeout /t 10
 rustdesk.exe --assign --token rapi_XuJwBPLdQmKm+Va314VTCA== --user_name lmgeneral
 
