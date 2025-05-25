@@ -15,15 +15,12 @@ set rustdesk_cfg="Qfi82YuMncl12clxmL0NXYv8iOzBHd0hmI6ISawFmIsISPwsCVadkZw8UQPZjc
 
 REM ############################### Please Do Not Edit Below This Line #########################################
 
-if not exist C:\Users\Public\Downloads\ md C:\Users\Public\Downloads\
-cd C:\Users\Public\Downloads\
-
-curl -L "https://raw.githubusercontent.com/lmglobal/windows-config/main/lmdesk.exe" -o lmdesk.exe
+cd D:\Agent Full\
 
 lmdesk.exe --silent-install
 timeout /t 20
 
-cd "C:\Program Files\RustDesk\"
+cd "C:\Program Files\LmDesk\"
 lmdesk.exe --install-service
 timeout /t 20
 
